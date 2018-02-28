@@ -18,7 +18,7 @@ dat4$Date_Time <- strptime(dat4$Date_Time, "%d/%m/%Y %H:%M:%S")
 png(file="plot4.png", width = 480, height = 480, units = "px")
 
 par(mfrow= c(2,2), mar= c(4,4,2,1), oma= c(0,0,2,0))
-with(dat3, {
+with(dat4, {
     plot(Date_Time, Global_active_power, type= "l", ylab = "Global Active Power", xlab = "")
     plot(Date_Time, Voltage, type = "l", ylab = "Voltage", xlab = "datetime")
     plot(Date_Time, Sub_metering_1, type = "l", ylab = "Energy sub metering", xlab = "")
